@@ -653,8 +653,24 @@ video {
   height: 1rem;
 }
 
+.h-24{
+  height: 6rem;
+}
+
 .h-72{
   height: 18rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-44{
+  height: 11rem;
 }
 
 .w-full{
@@ -957,6 +973,10 @@ video {
     display: inline-block;
   }
 
+  .sm\:h-72{
+    height: 18rem;
+  }
+
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -966,6 +986,10 @@ video {
 @media (min-width: 768px){
   .md\:order-last{
     order: 9999;
+  }
+
+  .md\:h-72{
+    height: 18rem;
   }
 
   .md\:grid-cols-2{
