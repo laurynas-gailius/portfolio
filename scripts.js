@@ -29,7 +29,7 @@ function showTooltip(id){
     id.style.opacity = "1";
     setTimeout(function() {
         id.style.opacity = "0";
-    }, 1500);
+    }, 2000);
 }
 
 function copyText() {
