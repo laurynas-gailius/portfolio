@@ -10,10 +10,10 @@
 <body class="font-manrope">
 
     <!-- Nav -->
-    <nav class="hidden">
+    <nav id="navbar" class="fixed -mt-20 ease-linear duration-300 z-10 w-full">
         
         <!-- Flex container -->
-        <div class="flex justify-between items-center px-4 py-4 tw-border-solid border-b border-gray-200 bg-white bg-opacity-95">
+        <div class="flex justify-between items-center px-4 py-4 tw-border-solid border-b border-gray-200 bg-white bg-opacity-90">
 
             <!-- Mini profile -->
             <div class="flex items-center">
@@ -28,13 +28,19 @@
             <!-- Buttons -->
             <div class="flex space-x-3">
                 <!-- Hire me -->
-                <button class="flex items-center h-10 px-4 text-white rounded-full bg-slate-900 text-sm font-medium hover:bg-slate-700">
-                    <img src="img/message.svg" class="h-4 pr-2" alt="">
+                <button onclick="copyText(); showTooltip(tooltip1);" class="flex items-center h-10 text-white rounded-full bg-slate-900 text-sm font-medium focus:ring-4 focus:ring-slate-300 hover:bg-slate-700">
+                    <div class="flex items-center px-4">
+                        <img src="img/message.svg" class="h-4 pr-2" alt="">
                     <span>Hire me</span>
+                    </div>
+                    <div id="tooltip1" class="flex items-center absolute -ml-4 py-2 px-3 mt-24 text-sm font-semibold text-slate-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 duration-300">
+                        <img src="img/check.svg" class="h-4 pr-2" alt="">
+                        Email copied!
+                    </div>
                 </button>
                 
                 <!-- Resume -->
-                <button class="flex items-center h-10 px-4 text-black rounded-full border border-slate-300 bg-white text-sm font-medium hover:bg-gray-100">
+                <button onclick="newTab()" target="_blank" class="flex items-center h-10 px-4 text-black rounded-full border border-slate-300 bg-white text-sm font-medium focus:ring-4 focus:ring-gray-100 hover:bg-gray-100">
                     <img src="img/resume.svg" class="h-4 pr-2" alt="">
                     <span>Resume</span>
                 </button> 
@@ -45,44 +51,51 @@
 
     <section>
             <!-- Profile -->
-            <div class="container m-auto pt-16">
-                <div class="flex flex-col max-w-lg">
-                    <!-- Image -->
-                    <div class="pb-6">
-                        <img src="img/profile-img.svg" class="h-20" alt="">
-                    </div>
-                    <!-- Title -->
-                    <h1 class="text-2xl font-bold">Laurynas Gailius</h1>
-                    <p class="font-semibold">Product designer</p>
-                    <!-- Description -->
-                    <p class="pt-6">Over the past few years, I've had the pleasure of collaborating with USA, UK, and Australian companies to research and design digital products.  </br></br> These efforts taught me the value of focus and meaningful direction, significance of reminding oneself about the purpose of work. </br></br> In this stage of my journey, I'm committed to shaping high-quality software through experiences that benefit and delight the users. If that resonates with you- let's connect.
-                    </p>
-                    <!-- Buttons -->
-                    <div class="flex space-x-3 pt-8">
-                        <!-- Hire me -->
-                        <button class="flex items-center h-10 px-4 text-white rounded-full bg-slate-900 text-sm font-medium hover:bg-slate-700">
-                            <img src="img/message.svg" class="h-4 pr-2" alt="">
-                            <span>Hire me</span>
-                        </button>
-                        
-                        <!-- Resume -->
-                        <button class="flex items-center h-10 px-4 text-black rounded-full border border-slate-300 bg-white text-sm font-medium hover:bg-gray-100">
-                            <img src="img/resume.svg" class="h-4 pr-2" alt="">
-                            <span>Resume</span>
-                        </button> 
-                    </div>
-                </div>
-            </div>
-        
-
-            <!-- Case studies -->
-            <!-- Flex container -->
-            <div class="container mx-auto">
+            <div class="flex max-w-7xl m-auto justify-center">
                 <!-- List -->
-                <ul class="grid grid-cols-1 gap-x-5 gap-y-12 pt-16 pb-24 md:grid-cols-2 xl:grid-cols-3">
+                <ul class="grid grid-cols-1 gap-x-5 gap-y-12 py-16 md:grid-cols-2">
+
+                    <li class="flex flex-col max-w-lg">
+                        <!-- Title -->
+                        <h1 class="text-2xl font-bold">Laurynas Gailius</h1>
+                        <p class="font-semibold">Product designer</p>
+                        <!-- Description -->
+                        <p class="pt-6 text-gray-600">Over the past few years, I've had the pleasure of collaborating with USA, UK, and Australian companies to research and design digital products.  </br></br> These efforts taught me the value of focus and meaningful direction, significance of reminding oneself about the purpose of work. </br></br> In this stage of my journey, I'm committed to shaping high-quality software through experiences that benefit and delight the users. If that resonates with you- let's connect.
+                        </p>
+                        <!-- Buttons -->
+                        <div class="flex space-x-3 pt-8">
+                            <!-- Hire me -->
+                                <button onclick="copyText(); showTooltip(tooltip2);" class="flex items-center h-10 text-white rounded-full bg-slate-900 text-sm font-medium focus:ring-4 focus:ring-slate-300 hover:bg-slate-700">
+                                    <div class="flex items-center px-4">
+                                        <img src="img/message.svg" class="h-4 pr-2" alt="">
+                                    <span>Hire me</span>
+                                    </div>
+                                    <div id="tooltip2" class="flex items-center absolute -ml-4 py-2 px-3 mb-24 text-sm font-semibold text-slate-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 duration-300">
+                                        <img src="img/check.svg" class="h-4 pr-2" alt="">
+                                        Email copied!
+                                    </div>
+                                </button>
+                            <!-- Resume -->
+                            <button onclick="newTab()" target="_blank" class="flex items-center h-10 px-4 text-black rounded-full border border-slate-300 bg-white text-sm font-medium focus:ring-4 focus:ring-gray-100 hover:bg-gray-100">
+                                <img src="img/resume.svg" class="h-4 pr-2" alt="">
+                                <span>Resume</span>
+                            </button> 
+                        </div>
+                    </li>
+
+                    <!-- Photo -->
+                    <li class="flex pb-6 justify-center pt-12 order-first md:order-last">
+                        <img src="img/profile-img.svg" class="h-72" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex max-w-7xl m-auto justify-center">
+                <!-- List -->
+                <ul class="grid grid-cols-1 gap-x-5 gap-y-12 pb-24 md:grid-cols-2">
 
                     <!-- Case study 1 -->
-                    <li class="flex flex-col border border-gray-200 rounded-2xl bg-white max-w-lg drop-shadow-3xl">
+                    <li class="flex flex-col border border-gray-200 rounded-2xl bg-white max-w-lg drop-shadow-3xl cursor-pointer">
                         <!-- Image -->
                         <div class="bg-slate-300 h-72 rounded-t-2xl">
 
@@ -92,9 +105,9 @@
                             <!-- Title -->
                             <h1 class="text-xl font-bold text-slate-900">Klix</h1>
                             <!-- Industry -->
-                            <p class="text-sm font-semibold text-slate-500">Fintech</p>
+                            <p class="text-sm font-semibold text-slate-600">Fintech</p>
                             <!-- Description -->
-                            <p class="text-sm pt-2 text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p class="text-sm pt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                     </li>
 
@@ -188,9 +201,10 @@
         </section>
         <footer>
             <div class="flex flex-col items-center pb-10">
-                <p class="text-sm  text-slate-500">Site designed and developed by me.</p>
-                <p class="text-sm  text-slate-500">© Laurynas Gailius 2022</p>
+                <p class="text-sm  text-gray-400">Site designed and developed by me.</p>
+                <p class="text-sm  text-gray-400">© Laurynas Gailius 2022</p>
             </div>
         </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
