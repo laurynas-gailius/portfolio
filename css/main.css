@@ -632,6 +632,10 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-12{
   height: 3rem;
 }
@@ -850,6 +854,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -966,9 +975,24 @@ video {
   --tw-ring-color: rgb(243 244 246 / var(--tw-ring-opacity));
 }
 
+@media (min-width: 400px){
+  .sm\:inline-block{
+    display: inline-block;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:order-last{
     order: 9999;
+  }
+
+  .md\:inline-block{
+    display: inline-block;
   }
 
   .md\:grid-cols-2{
