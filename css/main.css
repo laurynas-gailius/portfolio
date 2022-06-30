@@ -658,6 +658,10 @@ video {
   height: 1rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-full{
   height: 100%;
 }
@@ -674,24 +678,12 @@ video {
   height: 6rem;
 }
 
-.h-auto{
-  height: auto;
-}
-
 .w-full{
   width: 100%;
 }
 
-.w-4\/5{
-  width: 80%;
-}
-
 .w-24{
   width: 6rem;
-}
-
-.max-w-4xl{
-  max-width: 56rem;
 }
 
 .max-w-5xl{
@@ -748,12 +740,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-24 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
@@ -874,9 +860,9 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-16{
@@ -900,12 +886,12 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-24{
-  padding-top: 6rem;
+.pt-12{
+  padding-top: 3rem;
 }
 
-.pb-32{
-  padding-bottom: 8rem;
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .pb-14{
@@ -934,10 +920,6 @@ video {
 
 .pb-6{
   padding-bottom: 1.5rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
 }
 
 .font-manrope{
@@ -1130,6 +1112,19 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(6rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:pt-24{
+    padding-top: 6rem;
+  }
+
+  .sm\:pb-32{
+    padding-bottom: 8rem;
   }
 
   .sm\:text-lg{
