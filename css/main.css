@@ -662,10 +662,6 @@ video {
   height: auto;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-72{
   height: 18rem;
 }
@@ -807,14 +803,24 @@ video {
   background-color: rgb(246 203 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#D1E1E1\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 225 225 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FCCC44\]{
   --tw-bg-opacity: 1;
   background-color: rgb(252 204 68 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#0501F6\]{
+.bg-\[\#DFE7F5\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(5 1 246 / var(--tw-bg-opacity));
+  background-color: rgb(223 231 245 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#EDEDEE\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 237 238 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#DEEAD8\]{
@@ -902,10 +908,6 @@ video {
   padding-top: 3.5rem;
 }
 
-.pb-24{
-  padding-bottom: 6rem;
-}
-
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -920,6 +922,10 @@ video {
 
 .pb-6{
   padding-bottom: 1.5rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
 }
 
 .font-manrope{
@@ -1125,6 +1131,10 @@ video {
 
   .sm\:pb-32{
     padding-bottom: 8rem;
+  }
+
+  .sm\:pb-24{
+    padding-bottom: 6rem;
   }
 
   .sm\:text-lg{

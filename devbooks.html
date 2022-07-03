@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Foros - Environmental services</title>
+</head>
+<body class="font-manrope">
+
+    <!-- Nav -->
+    <nav class="fixed z-10 w-full">
+        
+        <!-- Flex container -->
+        <div class="flex justify-between items-center px-4 py-4 tw-border-solid border-b border-gray-200 bg-white bg-opacity-90 backdrop-blur-sm">
+
+            <!-- Mini profile -->
+            <div>
+                <a class="flex items-center hover:cursor-pointer" href="index.html">
+                    <!-- Image -->
+                    <img src="img/profile-img.svg" class="h-12 hidden sm:inline-block" alt="">
+                    <div class="flex flex-col pl-3">
+                        <h1 class="text-base font-semibold sm:text-lg">Laurynas Gailius</h1>
+                        <p class="text-sm font-medium text-slate-600">Product designer</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex space-x-3">
+                <!-- Hire me -->
+                <button onclick="copyText(); showTooltip(tooltip1);" class="flex items-center h-10 text-white rounded-full bg-slate-900 text-sm font-medium focus:ring-4 focus:ring-slate-300 hover:bg-slate-700">
+                    <div class="flex items-center px-4">
+                        <img src="img/message.svg" class="h-4 pr-2 hidden sm:inline-block" alt="">
+                    <span>Hire me</span>
+                    </div>
+                    <div id="tooltip1" class="flex items-center fixed top-20 left-2/4 translate-x-[-50%] sm:absolute sm:left-auto sm:translate-x-0 sm:top-auto sm:-ml-4 py-2 px-3 sm:mt-24 text-sm font-semibold text-slate-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 duration-300">
+                        <img src="img/check.svg" class="h-4 pr-2" alt="">
+                        Email copied!
+                    </div>
+                </button>
+                
+                <!-- Resume -->
+                <button onclick="newTab()" target="_blank" class="flex items-center h-10 px-4 text-black rounded-full border border-slate-300 bg-white text-sm font-medium focus:ring-4 focus:ring-gray-100 hover:bg-gray-100">
+                    <img src="img/resume.svg" class="h-4 pr-2 hidden sm:inline-block" alt="">
+                    <span>Resume</span>
+                </button> 
+            </div>
+
+        </div>
+    </nav>
+    
+    <section>
+        <div class="flex max-w-5xl m-auto pt-36 px-8 sm:px-16 animate__animated animate__fadeIn">
+            <div>
+                <h1 class="text-2xl font-bold">Laurynas Gailius</h1>
+                <p class="font-semibold text-slate-600">Product designer</p>
+                <p class="pt-6 text-gray-600">Over the past few years, I've had the pleasure of collaborating with USA, UK, and Australian companies to research and design digital products.  </br></br> These efforts taught me the value of focus and meaningful direction, significance of reminding oneself about the purpose of work. </br></br> In this stage of my journey, I'm committed to shaping high-quality software through experiences that benefit and delight the users. If that resonates with you- let's connect.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col max-w-5xl m-auto space-y-12 justify-center pt-12 pb-12 sm:pt-24 sm:pb-32 sm:space-y-24 animate__animated animate__fadeIn">
+            <div>
+                <img src="img/devbooks/devbooks-1.jpg" class="w-full h-auto" alt="">
+            </div>
+            <div>
+                <img src="img/devbooks/devbooks-2.jpg" class="w-full h-auto" alt="">
+            </div>
+            <div>
+                <img src="img/devbooks/devbooks-3.jpg" class="w-full h-auto" alt="">
+            </div>
+            <div>
+                <img src="img/devbooks/devbooks-4.jpg" class="w-full h-auto" alt="">
+            </div>
+        </div>
+
+        <div class="flex max-w-lg m-auto justify-center border-t-2 border-gray-200 lg:max-w-5xl">
+            <h1 class="text-2xl font-bold pb-14 pt-14">Other projects</h1>
+        </div>
+
+        <div class="flex max-w-7xl m-auto justify-center">
+            <ul class="grid grid-cols-1 gap-x-5 gap-y-12 pb-12 sm:pb-24 mx-5 lg:grid-cols-2">
+                <!-- Case study 1 -->
+                <li class="flex flex-col border border-gray-200 rounded-2xl bg-white max-w-lg drop-shadow-3xl cursor-pointer">
+                    <!-- Image -->
+                    <div class="bg-slate-300 h-72 rounded-t-2xl">
+                        
+                    </div>
+                    <!-- Description -->
+                    <div class="flex flex-col p-6">
+                        <!-- Title -->
+                        <h1 class="text-xl font-bold text-slate-900">Klix</h1>
+                        <!-- Industry -->
+                        <p class="text-sm font-semibold text-slate-600">Fintech</p>
+                        <!-- Description -->
+                        <p class="text-sm pt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </li>
+
+                <!-- Case study 2 -->
+            <a href="foros.html">
+                <li class="flex flex-col border border-gray-200 rounded-2xl bg-white max-w-lg drop-shadow-3xl cursor-pointer">
+                    <!-- Image -->
+                    <div class="bg-[#F6CB00] rounded-t-2xl">
+                        <img src="img/foros-thumb.png" class="w-full sm:h-72" alt="">
+                    </div>
+                    <!-- Description -->
+                    <div class="flex flex-col p-6">
+                        <!-- Title -->
+                        <h1 class="text-xl font-bold text-slate-900">Foros</h1>
+                        <!-- Industry -->
+                        <p class="text-sm font-semibold text-slate-500">Environmental services</p>
+                        <!-- Description -->
+                        <p class="text-sm pt-2 text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </li>
+            </a>
+            </ul>
+        </div>
+    </section>  
+    <footer>
+            <div class="flex flex-col items-center pb-10">
+                <p class="text-sm  text-gray-400">Site designed and developed by me.</p>
+                <p class="text-sm  text-gray-400">© Laurynas Gailius 2022</p>
+            </div>
+        </footer>
+        <script src="scripts.js"></script>
+</body>
+</html>
