@@ -880,6 +880,11 @@ video {
   padding-bottom: 4rem;
 }
 
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -932,6 +937,22 @@ video {
   padding-top: 9rem;
 }
 
+.pt-24{
+  padding-top: 6rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
+.pt-72{
+  padding-top: 18rem;
+}
+
+.pt-28{
+  padding-top: 7rem;
+}
+
 .font-manrope{
   font-family: 'Manrope', sans-serif;
 }
@@ -953,6 +974,11 @@ video {
 
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -1148,6 +1174,21 @@ video {
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
