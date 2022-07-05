@@ -17,8 +17,11 @@ function scrollFunction() {
     }
 }
 
+const navClass = ["fixed", "-mt-20", "ease-linear", "duration-300", "z-10", "w-full"];
+
 window.addEventListener('load', (event) => {
-    document.getElementById("navbar").classList.replace('-mt-20', 'ease-linear', 'duration-300', 'z-10', 'w-full');
+    document.getElementById("navbar").classList = "";
+    document.getElementById("navbar").classList.add(...navClass);
   });
 
 // Resume
