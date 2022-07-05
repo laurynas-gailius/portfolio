@@ -17,6 +17,10 @@ function scrollFunction() {
     }
 }
 
+window.addEventListener('load', (event) => {
+    document.getElementById("navbar").classList.replace('-mt-20', 'ease-linear', 'duration-300', 'z-10', 'w-full');
+  });
+
 // Resume
 function newTab() {
     window.open(
@@ -36,3 +40,4 @@ function copyText() {
     navigator.clipboard.writeText
         ("laurynas@hey.com");
 }
+
