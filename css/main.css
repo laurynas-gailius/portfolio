@@ -592,6 +592,14 @@ video {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .top-20{
   top: 5rem;
 }
@@ -602,6 +610,14 @@ video {
 
 .top-4{
   top: 1rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
 }
 
 .z-10{
@@ -625,8 +641,8 @@ video {
   margin-bottom: 6rem;
 }
 
-.-mt-20{
-  margin-top: -5rem;
+.-mt-28{
+  margin-top: -7rem;
 }
 
 .flex{
@@ -737,6 +753,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -898,10 +918,6 @@ video {
 
 .pb-6{
   padding-bottom: 1.5rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
 }
 
 .pb-24{
@@ -1123,6 +1139,12 @@ video {
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:mt-12{
+    margin-top: 3rem;
   }
 }
 
